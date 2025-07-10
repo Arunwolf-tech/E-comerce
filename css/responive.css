@@ -1,0 +1,76 @@
+/* ---start to responsive--- */
+
+:root{
+    --bg-color: #f5ebe1;
+    --text-color: #3a3a3a;
+    --main-color: #d7bdb0;
+    --other-color: #e3d5ca;
+    --accent-color: #edeee9;
+    --lighttext-colo: #555;
+    --big-font: 3.3rem;
+    --h2-font: 2rem;
+    --h3-font: 2rem;
+    --p-font: 1rem;
+    --normal-font: 1rem;
+}
+
+@media (max-width: 1700px) {
+    header {
+        padding: 12px 3%;
+    }
+
+    header.sticky {
+        padding: 10px 3%;
+    }
+
+    section {
+        padding: 80px 3% 70px;
+    }
+
+    .home {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #menu-icon{
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: #f7f9fb;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: var(--lighttext-colo);
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 125vh;
+        background: var(--accent-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 130px 30px;
+        transition: right 0.45s ease;
+        z-index: 999;
+    }
+    .navbar a{
+        display: block;
+        margin-top: -20px;
+        padding: 20px;
+    }
+    .navbar a:hover{
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .navbar.open{
+        right: 0;
+    }
+}
+
